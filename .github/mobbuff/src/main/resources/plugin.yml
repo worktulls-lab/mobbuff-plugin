@@ -1,0 +1,18 @@
+name: MobBuff
+version: '1.0.0'
+main: com.example.mobbuff.MobBuffPlugin
+api-version: '1.21'
+description: Удваивает здоровье и урон мобов, включается/выключается командой.
+author: YourName
+
+commands:
+  mobbuff:
+    description: Включает или выключает удвоение здоровья и урона мобов.
+    usage: /mobbuff <on|off|status>
+    permission: mobbuff.toggle
+    permission-message: У тебя нет прав на использование этой команды.
+
+permissions:
+  mobbuff.toggle:
+    description: Разрешает включать/выключать баф мобов.
+    default: op
